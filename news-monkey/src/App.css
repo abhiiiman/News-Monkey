@@ -1,0 +1,63 @@
+*{
+  scroll-behavior: smooth;
+}
+.read-btn {
+  transition: all 0.3s;
+  /* background-color: #EEB16B; */
+  /* color: #642F18; */
+  /* border-color: #642F18;
+  background-color: #642F18; */
+}
+.read-btn:hover {
+  transform: scale(1.15);
+  /* border-color: #642F18;
+  background-color: #642F18; */
+}
+.logo {
+  transition: all 0.3s;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+.nav-link {
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+}
+
+.badge {
+  color: white;
+  /* background-color: transparent; */
+  font-size: small;
+}
+
+.card-title {
+  font-size: large;
+}
+
+.card-text {
+  font-size: small;
+}
+
+.topButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.errorMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorMsg img {
+  max-width: 80%;
+  max-height: 90%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
