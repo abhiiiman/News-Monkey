@@ -1,4 +1,6 @@
 import React from "react";
+import APIErrorImage from "./APIErrorImage.gif";
+
 const NewsItem = (props) => {
 
     let { title, description, imageUrl, newsUrl, author, date, source } = props;
@@ -8,7 +10,7 @@ const NewsItem = (props) => {
                 <span className="position-absolute top-0 translate-middle badge rounded-pill bg-dark">
                     <span className="visually-hidden">{source}</span>
                 </span>
-                <img className="card-img-top" src={!imageUrl ? "/Resources/imageNotFound.gif" : imageUrl} alt='' />
+                <img className="card-img-top" src={!imageUrl ? {APIErrorImage} : imageUrl} alt='' />
                 <div className="card-body">
                     <h5 className="card-title"><strong>{title}</strong></h5>
                     <p className="card-text">{description}</p>

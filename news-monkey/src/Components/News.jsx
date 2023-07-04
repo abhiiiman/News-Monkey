@@ -4,6 +4,7 @@ import SpinLoader from './SpinLoader';
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
 import ButtonTop from './ButtonTop';
+import APIErrorImage from "./APIErrorImage.gif";
 
 export class News extends Component {
 
@@ -100,7 +101,7 @@ export class News extends Component {
                             <div className="errorMsg container text-center">
                                 {/* <p>No articles to display</p>
                                 <p><strong>API Error : 429</strong></p> */}
-                                <img src="/Resources/APIErrorImage.gif" alt="error_image" />
+                                    <img src={APIErrorImage} alt="error_image" />
                             </div>
                         ))}
                     </div>
